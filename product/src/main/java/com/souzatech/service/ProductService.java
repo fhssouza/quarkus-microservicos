@@ -15,7 +15,7 @@ public class ProductService {
     @Inject
     ProductRepository productRepository;
 
-    public List<ProductDTO> findAllCustumers() {
+    public List<ProductDTO> findAllProducts() {
         List<ProductDTO> products = new ArrayList<>();
 
         productRepository.findAll().stream().forEach(item->{
